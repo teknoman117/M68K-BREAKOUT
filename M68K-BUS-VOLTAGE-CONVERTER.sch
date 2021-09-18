@@ -4,11 +4,11 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
+Title "M68K-BUS-VOLTAGE-CONVERTER"
+Date "2021-08-30"
+Rev "1.0"
 Comp ""
-Comment1 ""
+Comment1 "Carrier board to convert 5V MC68010 bus to 3.3V for an FPGA"
 Comment2 ""
 Comment3 ""
 Comment4 ""
