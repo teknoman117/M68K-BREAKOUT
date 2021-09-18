@@ -57,17 +57,6 @@ Wire Wire Line
 	2800 2300 2850 2300
 Wire Wire Line
 	2800 2350 2800 2300
-$Comp
-L CPU_NXP_68000:68010D U1
-U 1 1 61201EB4
-P 2800 4750
-F 0 "U1" H 3450 7050 50  0000 C CNN
-F 1 "68010D" H 2250 7050 50  0000 C CNN
-F 2 "Package_DIP:DIP-64_W22.86mm_Socket" H 2800 4750 50  0001 C CNN
-F 3 "https://www.nxp.com/docs/en/reference-manual/MC68000UM.pdf" H 2800 4750 50  0001 C CNN
-	1    2800 4750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3800 4950 3900 4950
 Wire Wire Line
@@ -374,28 +363,6 @@ Wire Wire Line
 Wire Wire Line
 	1050 6150 1050 5700
 Connection ~ 1050 6150
-$Comp
-L Device:R_Small_US R1
-U 1 1 612D2A0D
-P 1050 5600
-F 0 "R1" H 900 5650 50  0000 L CNN
-F 1 "2.2K" H 800 5550 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 1050 5600 50  0001 C CNN
-F 3 "~" H 1050 5600 50  0001 C CNN
-	1    1050 5600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small_US R2
-U 1 1 612D3422
-P 1250 5600
-F 0 "R2" H 1300 5650 50  0000 L CNN
-F 1 "2.2K" H 1300 5550 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 1250 5600 50  0001 C CNN
-F 3 "~" H 1250 5600 50  0001 C CNN
-	1    1250 5600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1050 5500 1050 5450
 $Comp
@@ -427,28 +394,6 @@ Wire Wire Line
 	1250 5850 1700 5850
 Wire Wire Line
 	1050 6150 1700 6150
-$Comp
-L 74xx:74LS06 U6
-U 1 1 612F12E4
-P 2200 8000
-F 0 "U6" H 2200 8317 50  0000 C CNN
-F 1 "74LVC06" H 2200 8226 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2200 8000 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS06" H 2200 8000 50  0001 C CNN
-	1    2200 8000
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS06 U6
-U 2 1 612F8993
-P 2200 8500
-F 0 "U6" H 2200 8817 50  0000 C CNN
-F 1 "74LVC06" H 2200 8726 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2200 8500 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS06" H 2200 8500 50  0001 C CNN
-	2    2200 8500
-	1    0    0    -1  
-$EndComp
 Text GLabel 2500 8000 2    50   Output ~ 0
 ~HALT
 Text GLabel 2500 8500 2    50   Output ~ 0
@@ -457,17 +402,6 @@ Text GLabel 1900 8000 0    50   Input ~ 0
 HALT_IN
 Text GLabel 1900 8500 0    50   Input ~ 0
 RESET_IN
-$Comp
-L 74xx:74LS06 U6
-U 7 1 6130739F
-P 3300 8950
-F 0 "U6" H 3350 9350 50  0000 L CNN
-F 1 "74LVC06" H 3350 8600 50  0000 L CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3300 8950 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS06" H 3300 8950 50  0001 C CNN
-	7    3300 8950
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+3V3 #PWR0105
 U 1 1 6130837C
@@ -488,17 +422,6 @@ F 1 "GND" H 3305 9277 50  0000 C CNN
 F 2 "" H 3300 9450 50  0001 C CNN
 F 3 "" H 3300 9450 50  0001 C CNN
 	1    3300 9450
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74ALVC164245:74ALVC164245-logic U2
-U 1 1 6131CC19
-P 5900 2350
-F 0 "U2" H 5950 2400 50  0000 C CNN
-F 1 "74ALVC164245" H 7050 2400 50  0000 C CNN
-F 2 "Package_SO:TSSOP-48_6.1x12.5mm_P0.5mm" H 6050 2350 50  0001 C CNN
-F 3 "" H 6050 2350 50  0001 C CNN
-	1    5900 2350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -595,17 +518,6 @@ Text GLabel 5800 3250 0    50   Output ~ 0
 R~W
 Text GLabel 5800 4250 0    50   Output ~ 0
 R~W
-$Comp
-L 74ALVC164245:74ALVC164245-logic U3
-U 1 1 612BC72B
-P 5900 5200
-F 0 "U3" H 5950 5250 50  0000 C CNN
-F 1 "74ALVC164245" H 7050 5250 50  0000 C CNN
-F 2 "Package_SO:TSSOP-48_6.1x12.5mm_P0.5mm" H 6050 5200 50  0001 C CNN
-F 3 "" H 6050 5200 50  0001 C CNN
-	1    5900 5200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6350 5100 6350 5050
 Wire Wire Line
@@ -786,17 +698,6 @@ $EndComp
 Connection ~ 12400 2200
 Wire Wire Line
 	12400 2200 12450 2200
-$Comp
-L 74ALVC164245:74ALVC164245-logic U5
-U 1 1 612C919C
-P 11650 5250
-F 0 "U5" H 11700 5300 50  0000 C CNN
-F 1 "74ALVC164245" H 12800 5300 50  0000 C CNN
-F 2 "Package_SO:TSSOP-48_6.1x12.5mm_P0.5mm" H 11800 5250 50  0001 C CNN
-F 3 "" H 11800 5250 50  0001 C CNN
-	1    11650 5250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	12100 5150 12100 5100
 Wire Wire Line
@@ -1330,50 +1231,6 @@ Wire Wire Line
 Wire Wire Line
 	12950 7050 13200 7050
 Connection ~ 13050 7150
-$Comp
-L 74xx:74LS06 U6
-U 3 1 61C72867
-P 2200 9050
-F 0 "U6" H 2200 9367 50  0000 C CNN
-F 1 "74LVC06" H 2200 9276 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2200 9050 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS06" H 2200 9050 50  0001 C CNN
-	3    2200 9050
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS06 U6
-U 4 1 61C73508
-P 2200 9550
-F 0 "U6" H 2200 9867 50  0000 C CNN
-F 1 "74LVC06" H 2200 9776 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2200 9550 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS06" H 2200 9550 50  0001 C CNN
-	4    2200 9550
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS06 U6
-U 5 1 61C741DC
-P 2200 10050
-F 0 "U6" H 2200 10367 50  0000 C CNN
-F 1 "74LVC06" H 2200 10276 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2200 10050 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS06" H 2200 10050 50  0001 C CNN
-	5    2200 10050
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS06 U6
-U 6 1 61C754C4
-P 2200 10550
-F 0 "U6" H 2200 10867 50  0000 C CNN
-F 1 "74LVC06" H 2200 10776 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2200 10550 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS06" H 2200 10550 50  0001 C CNN
-	6    2200 10550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1900 9050 1750 9050
 Wire Wire Line
@@ -1402,127 +1259,6 @@ F 1 "+3V3" H 1765 9073 50  0000 C CNN
 F 2 "" H 1750 8900 50  0001 C CNN
 F 3 "" H 1750 8900 50  0001 C CNN
 	1    1750 8900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C1
-U 1 1 61E084D1
-P 1750 1000
-F 0 "C1" H 1842 1046 50  0000 L CNN
-F 1 "100nF" H 1842 955 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 1750 1000 50  0001 C CNN
-F 3 "~" H 1750 1000 50  0001 C CNN
-	1    1750 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C2
-U 1 1 61E08DB5
-P 2200 1000
-F 0 "C2" H 2292 1046 50  0000 L CNN
-F 1 "100nF" H 2292 955 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 2200 1000 50  0001 C CNN
-F 3 "~" H 2200 1000 50  0001 C CNN
-	1    2200 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C3
-U 1 1 61E22FAF
-P 2650 1000
-F 0 "C3" H 2742 1046 50  0000 L CNN
-F 1 "100nF" H 2742 955 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 2650 1000 50  0001 C CNN
-F 3 "~" H 2650 1000 50  0001 C CNN
-	1    2650 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C4
-U 1 1 61E22FB5
-P 3100 1000
-F 0 "C4" H 3192 1046 50  0000 L CNN
-F 1 "100nF" H 3192 955 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3100 1000 50  0001 C CNN
-F 3 "~" H 3100 1000 50  0001 C CNN
-	1    3100 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C5
-U 1 1 61E3CB11
-P 3550 1000
-F 0 "C5" H 3642 1046 50  0000 L CNN
-F 1 "100nF" H 3642 955 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3550 1000 50  0001 C CNN
-F 3 "~" H 3550 1000 50  0001 C CNN
-	1    3550 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C6
-U 1 1 61E3CB17
-P 4000 1000
-F 0 "C6" H 4092 1046 50  0000 L CNN
-F 1 "100nF" H 4092 955 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4000 1000 50  0001 C CNN
-F 3 "~" H 4000 1000 50  0001 C CNN
-	1    4000 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C7
-U 1 1 61E72A23
-P 4450 1000
-F 0 "C7" H 4542 1046 50  0000 L CNN
-F 1 "100nF" H 4542 955 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4450 1000 50  0001 C CNN
-F 3 "~" H 4450 1000 50  0001 C CNN
-	1    4450 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C8
-U 1 1 61E72A29
-P 4900 1000
-F 0 "C8" H 4992 1046 50  0000 L CNN
-F 1 "100nF" H 4992 955 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4900 1000 50  0001 C CNN
-F 3 "~" H 4900 1000 50  0001 C CNN
-	1    4900 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C9
-U 1 1 61E72A2F
-P 5350 1000
-F 0 "C9" H 5442 1046 50  0000 L CNN
-F 1 "100nF" H 5442 955 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 5350 1000 50  0001 C CNN
-F 3 "~" H 5350 1000 50  0001 C CNN
-	1    5350 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C10
-U 1 1 61E72A35
-P 5800 1000
-F 0 "C10" H 5892 1046 50  0000 L CNN
-F 1 "100nF" H 5892 955 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 5800 1000 50  0001 C CNN
-F 3 "~" H 5800 1000 50  0001 C CNN
-	1    5800 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C11
-U 1 1 61E72A3B
-P 6250 1000
-F 0 "C11" H 6342 1046 50  0000 L CNN
-F 1 "100nF" H 6342 955 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 6250 1000 50  0001 C CNN
-F 3 "~" H 6250 1000 50  0001 C CNN
-	1    6250 1000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1873,17 +1609,6 @@ Wire Wire Line
 	11400 3650 11550 3650
 Wire Wire Line
 	11450 3250 11450 2200
-$Comp
-L 74ALVC164245:74ALVC164245-logic U4
-U 1 1 612C26EB
-P 11650 2350
-F 0 "U4" H 11700 2400 50  0000 C CNN
-F 1 "74ALVC164245" H 12800 2400 50  0000 C CNN
-F 2 "Package_SO:TSSOP-48_6.1x12.5mm_P0.5mm" H 11800 2350 50  0001 C CNN
-F 3 "" H 11800 2350 50  0001 C CNN
-	1    11650 2350
-	1    0    0    -1  
-$EndComp
 Text GLabel 13100 3950 2    50   Output ~ 0
 ~L_LDS
 Text GLabel 11400 2650 0    50   Input ~ 0
@@ -2031,17 +1756,6 @@ Wire Bus Line
 	10000 3650 10000 3750
 Text GLabel 10100 3750 2    50   BiDi ~ 0
 DD[0..15]
-$Comp
-L Connector_Generic:Conn_02x09_Odd_Even J1
-U 1 1 61DB68AB
-P 9350 3150
-F 0 "J1" H 9400 3767 50  0000 C CNN
-F 1 "Data" H 9400 3676 50  0000 C CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_2x09_P2.00mm_Vertical" H 9350 3150 50  0001 C CNN
-F 3 "~" H 9350 3150 50  0001 C CNN
-	1    9350 3150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8900 3550 9150 3550
 Wire Wire Line
@@ -2059,28 +1773,6 @@ F 1 "GND" H 10155 3077 50  0000 C CNN
 F 2 "" H 10150 3250 50  0001 C CNN
 F 3 "" H 10150 3250 50  0001 C CNN
 	1    10150 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x09_Odd_Even J2
-U 1 1 61F95DC2
-P 14700 3100
-F 0 "J2" H 14750 3717 50  0000 C CNN
-F 1 "Bus Signals" H 14750 3626 50  0000 C CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_2x09_P2.00mm_Vertical" H 14700 3100 50  0001 C CNN
-F 3 "~" H 14700 3100 50  0001 C CNN
-	1    14700 3100
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x09_Odd_Even J3
-U 1 1 61FCAE14
-P 9350 6100
-F 0 "J3" H 9400 6717 50  0000 C CNN
-F 1 "Address" H 9400 6626 50  0000 C CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_2x09_P2.00mm_Vertical" H 9350 6100 50  0001 C CNN
-F 3 "~" H 9350 6100 50  0001 C CNN
-	1    9350 6100
 	1    0    0    -1  
 $EndComp
 Text Label 9850 6000 2    50   ~ 0
@@ -2199,17 +1891,6 @@ Wire Bus Line
 Connection ~ 10000 6600
 Text GLabel 10100 6700 2    50   Output ~ 0
 AA[1..23]
-$Comp
-L Connector_Generic:Conn_02x09_Odd_Even J4
-U 1 1 62881B60
-P 14600 6150
-F 0 "J4" H 14650 6767 50  0000 C CNN
-F 1 "Function Code and Lower Address" H 14650 6676 50  0000 C CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_2x09_P2.00mm_Vertical" H 14600 6150 50  0001 C CNN
-F 3 "~" H 14600 6150 50  0001 C CNN
-	1    14600 6150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10150 6100 10150 6200
 Wire Wire Line
@@ -2418,17 +2099,6 @@ Wire Wire Line
 Connection ~ 14200 6250
 Wire Wire Line
 	14200 6250 14200 6850
-$Comp
-L Device:R_Small_US R3
-U 1 1 61A1CBC4
-P 1200 4300
-F 0 "R3" H 1250 4350 50  0000 L CNN
-F 1 "2.2K" H 1250 4250 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 1200 4300 50  0001 C CNN
-F 3 "~" H 1200 4300 50  0001 C CNN
-	1    1200 4300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1200 4150 1200 4200
 Wire Wire Line
@@ -2488,4 +2158,386 @@ Wire Bus Line
 	7550 5400 7550 7200
 Wire Bus Line
 	4000 2550 4000 4850
+$Comp
+L CPU_NXP_68000:68010D U1
+U 1 1 61201EB4
+P 2800 4750
+F 0 "U1" H 3450 7050 50  0000 C CNN
+F 1 "68010D" H 2250 7050 50  0000 C CNN
+F 2 "Package_DIP:DIP-64_W22.86mm_Socket" H 2800 4750 50  0001 C CNN
+F 3 "https://www.nxp.com/docs/en/reference-manual/MC68000UM.pdf" H 2800 4750 50  0001 C CNN
+F 4 "https://www.mouser.com/ProductDetail/575-193964" H 2800 4750 50  0001 C CNN "Mouser_Link"
+F 5 " 575-193964" H 2800 4750 50  0001 C CNN "Mouser_PN"
+	1    2800 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R1
+U 1 1 612D2A0D
+P 1050 5600
+F 0 "R1" H 900 5650 50  0000 L CNN
+F 1 "2.2K" H 800 5550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 1050 5600 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/crxxxxx-1858361.pdf" H 1050 5600 50  0001 C CNN
+F 4 "https://www.mouser.com/ProductDetail/Bourns/CR0603-FX-2201ELF?qs=%2Fha2pyFadugdzJ7nlgcs%252B6DvFNtaxPtnyayvdi7zvXZhRYLSKKpmrgZDV990M6J3" H 1050 5600 50  0001 C CNN "Mouser_Link"
+F 5 "652-CR0603FX-2201ELF" H 1050 5600 50  0001 C CNN "Mouser_PN"
+	1    1050 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R2
+U 1 1 612D3422
+P 1250 5600
+F 0 "R2" H 1300 5650 50  0000 L CNN
+F 1 "2.2K" H 1300 5550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 1250 5600 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/crxxxxx-1858361.pdf" H 1250 5600 50  0001 C CNN
+F 4 "https://www.mouser.com/ProductDetail/Bourns/CR0603-FX-2201ELF?qs=%2Fha2pyFadugdzJ7nlgcs%252B6DvFNtaxPtnyayvdi7zvXZhRYLSKKpmrgZDV990M6J3" H 1250 5600 50  0001 C CNN "Mouser_Link"
+F 5 "652-CR0603FX-2201ELF" H 1250 5600 50  0001 C CNN "Mouser_PN"
+	1    1250 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS06 U6
+U 1 1 612F12E4
+P 2200 8000
+F 0 "U6" H 2200 8317 50  0000 C CNN
+F 1 "74LVC06" H 2200 8226 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2200 8000 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74lvc06a.pdf" H 2200 8000 50  0001 C CNN
+F 4 "https://www.mouser.com/ProductDetail/595-SN74LVC06AD" H 2200 8000 50  0001 C CNN "Mouser_Link"
+F 5 "595-SN74LVC06AD" H 2200 8000 50  0001 C CNN "Mouser_PN"
+	1    2200 8000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS06 U6
+U 2 1 612F8993
+P 2200 8500
+F 0 "U6" H 2200 8817 50  0000 C CNN
+F 1 "74LVC06" H 2200 8726 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2200 8500 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74lvc06a.pdf" H 2200 8500 50  0001 C CNN
+F 4 "https://www.mouser.com/ProductDetail/595-SN74LVC06AD" H 2200 8500 50  0001 C CNN "Mouser_Link"
+F 5 "595-SN74LVC06AD" H 2200 8500 50  0001 C CNN "Mouser_PN"
+	2    2200 8500
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS06 U6
+U 7 1 6130739F
+P 3300 8950
+F 0 "U6" H 3350 9350 50  0000 L CNN
+F 1 "74LVC06" H 3350 8600 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3300 8950 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74lvc06a.pdf" H 3300 8950 50  0001 C CNN
+F 4 "https://www.mouser.com/ProductDetail/595-SN74LVC06AD" H 3300 8950 50  0001 C CNN "Mouser_Link"
+F 5 "595-SN74LVC06AD" H 3300 8950 50  0001 C CNN "Mouser_PN"
+	7    3300 8950
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74ALVC164245:74ALVC164245-logic U2
+U 1 1 6131CC19
+P 5900 2350
+F 0 "U2" H 5950 2400 50  0000 C CNN
+F 1 "74ALVC164245" H 7050 2400 50  0000 C CNN
+F 2 "Package_SO:TSSOP-48_6.1x12.5mm_P0.5mm" H 6050 2350 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/916/74ALVC164245-1318594.pdf" H 6050 2350 50  0001 C CNN
+F 4 "https://www.mouser.com/ProductDetail/771-74ALVC164245" H 5900 2350 50  0001 C CNN "Mouser_Link"
+F 5 "771-74ALVC164245" H 5900 2350 50  0001 C CNN "Mouser_PN"
+	1    5900 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74ALVC164245:74ALVC164245-logic U3
+U 1 1 612BC72B
+P 5900 5200
+F 0 "U3" H 5950 5250 50  0000 C CNN
+F 1 "74ALVC164245" H 7050 5250 50  0000 C CNN
+F 2 "Package_SO:TSSOP-48_6.1x12.5mm_P0.5mm" H 6050 5200 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/916/74ALVC164245-1318594.pdf" H 6050 5200 50  0001 C CNN
+F 4 "https://www.mouser.com/ProductDetail/771-74ALVC164245" H 5900 5200 50  0001 C CNN "Mouser_Link"
+F 5 "771-74ALVC164245" H 5900 5200 50  0001 C CNN "Mouser_PN"
+	1    5900 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74ALVC164245:74ALVC164245-logic U5
+U 1 1 612C919C
+P 11650 5250
+F 0 "U5" H 11700 5300 50  0000 C CNN
+F 1 "74ALVC164245" H 12800 5300 50  0000 C CNN
+F 2 "Package_SO:TSSOP-48_6.1x12.5mm_P0.5mm" H 11800 5250 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/916/74ALVC164245-1318594.pdf" H 11800 5250 50  0001 C CNN
+F 4 "https://www.mouser.com/ProductDetail/771-74ALVC164245" H 11650 5250 50  0001 C CNN "Mouser_Link"
+F 5 "771-74ALVC164245" H 11650 5250 50  0001 C CNN "Mouser_PN"
+	1    11650 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS06 U6
+U 3 1 61C72867
+P 2200 9050
+F 0 "U6" H 2200 9367 50  0000 C CNN
+F 1 "74LVC06" H 2200 9276 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2200 9050 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74lvc06a.pdf" H 2200 9050 50  0001 C CNN
+F 4 "https://www.mouser.com/ProductDetail/595-SN74LVC06AD" H 2200 9050 50  0001 C CNN "Mouser_Link"
+F 5 "595-SN74LVC06AD" H 2200 9050 50  0001 C CNN "Mouser_PN"
+	3    2200 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS06 U6
+U 4 1 61C73508
+P 2200 9550
+F 0 "U6" H 2200 9867 50  0000 C CNN
+F 1 "74LVC06" H 2200 9776 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2200 9550 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74lvc06a.pdf" H 2200 9550 50  0001 C CNN
+F 4 "https://www.mouser.com/ProductDetail/595-SN74LVC06AD" H 2200 9550 50  0001 C CNN "Mouser_Link"
+F 5 "595-SN74LVC06AD" H 2200 9550 50  0001 C CNN "Mouser_PN"
+	4    2200 9550
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS06 U6
+U 5 1 61C741DC
+P 2200 10050
+F 0 "U6" H 2200 10367 50  0000 C CNN
+F 1 "74LVC06" H 2200 10276 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2200 10050 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74lvc06a.pdf" H 2200 10050 50  0001 C CNN
+F 4 "https://www.mouser.com/ProductDetail/595-SN74LVC06AD" H 2200 10050 50  0001 C CNN "Mouser_Link"
+F 5 "595-SN74LVC06AD" H 2200 10050 50  0001 C CNN "Mouser_PN"
+	5    2200 10050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS06 U6
+U 6 1 61C754C4
+P 2200 10550
+F 0 "U6" H 2200 10867 50  0000 C CNN
+F 1 "74LVC06" H 2200 10776 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2200 10550 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74lvc06a.pdf" H 2200 10550 50  0001 C CNN
+F 4 "https://www.mouser.com/ProductDetail/595-SN74LVC06AD" H 2200 10550 50  0001 C CNN "Mouser_Link"
+F 5 "595-SN74LVC06AD" H 2200 10550 50  0001 C CNN "Mouser_PN"
+	6    2200 10550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 61E084D1
+P 1750 1000
+F 0 "C1" H 1842 1046 50  0000 L CNN
+F 1 "100nF" H 1842 955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 1750 1000 50  0001 C CNN
+F 3 "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_general_en.pdf" H 1750 1000 50  0001 C CNN
+F 4 "https://www.mouser.com/ProductDetail/810-C1608X7R1E104K" H 1750 1000 50  0001 C CNN "Mouser_Link"
+F 5 "810-C1608X7R1E104K" H 1750 1000 50  0001 C CNN "Mouser_PN"
+	1    1750 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 61E08DB5
+P 2200 1000
+F 0 "C2" H 2292 1046 50  0000 L CNN
+F 1 "100nF" H 2292 955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 2200 1000 50  0001 C CNN
+F 3 "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_general_en.pdf" H 2200 1000 50  0001 C CNN
+F 4 "https://www.mouser.com/ProductDetail/810-C1608X7R1E104K" H 2200 1000 50  0001 C CNN "Mouser_Link"
+F 5 "810-C1608X7R1E104K" H 2200 1000 50  0001 C CNN "Mouser_PN"
+	1    2200 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 61E22FAF
+P 2650 1000
+F 0 "C3" H 2742 1046 50  0000 L CNN
+F 1 "100nF" H 2742 955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 2650 1000 50  0001 C CNN
+F 3 "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_general_en.pdf" H 2650 1000 50  0001 C CNN
+F 4 "https://www.mouser.com/ProductDetail/810-C1608X7R1E104K" H 2650 1000 50  0001 C CNN "Mouser_Link"
+F 5 "810-C1608X7R1E104K" H 2650 1000 50  0001 C CNN "Mouser_PN"
+	1    2650 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 61E22FB5
+P 3100 1000
+F 0 "C4" H 3192 1046 50  0000 L CNN
+F 1 "100nF" H 3192 955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3100 1000 50  0001 C CNN
+F 3 "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_general_en.pdf" H 3100 1000 50  0001 C CNN
+F 4 "https://www.mouser.com/ProductDetail/810-C1608X7R1E104K" H 3100 1000 50  0001 C CNN "Mouser_Link"
+F 5 "810-C1608X7R1E104K" H 3100 1000 50  0001 C CNN "Mouser_PN"
+	1    3100 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C5
+U 1 1 61E3CB11
+P 3550 1000
+F 0 "C5" H 3642 1046 50  0000 L CNN
+F 1 "100nF" H 3642 955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3550 1000 50  0001 C CNN
+F 3 "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_general_en.pdf" H 3550 1000 50  0001 C CNN
+F 4 "https://www.mouser.com/ProductDetail/810-C1608X7R1E104K" H 3550 1000 50  0001 C CNN "Mouser_Link"
+F 5 "810-C1608X7R1E104K" H 3550 1000 50  0001 C CNN "Mouser_PN"
+	1    3550 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C6
+U 1 1 61E3CB17
+P 4000 1000
+F 0 "C6" H 4092 1046 50  0000 L CNN
+F 1 "100nF" H 4092 955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4000 1000 50  0001 C CNN
+F 3 "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_general_en.pdf" H 4000 1000 50  0001 C CNN
+F 4 "https://www.mouser.com/ProductDetail/810-C1608X7R1E104K" H 4000 1000 50  0001 C CNN "Mouser_Link"
+F 5 "810-C1608X7R1E104K" H 4000 1000 50  0001 C CNN "Mouser_PN"
+	1    4000 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C7
+U 1 1 61E72A23
+P 4450 1000
+F 0 "C7" H 4542 1046 50  0000 L CNN
+F 1 "100nF" H 4542 955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4450 1000 50  0001 C CNN
+F 3 "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_general_en.pdf" H 4450 1000 50  0001 C CNN
+F 4 "https://www.mouser.com/ProductDetail/810-C1608X7R1E104K" H 4450 1000 50  0001 C CNN "Mouser_Link"
+F 5 "810-C1608X7R1E104K" H 4450 1000 50  0001 C CNN "Mouser_PN"
+	1    4450 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C8
+U 1 1 61E72A29
+P 4900 1000
+F 0 "C8" H 4992 1046 50  0000 L CNN
+F 1 "100nF" H 4992 955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4900 1000 50  0001 C CNN
+F 3 "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_general_en.pdf" H 4900 1000 50  0001 C CNN
+F 4 "https://www.mouser.com/ProductDetail/810-C1608X7R1E104K" H 4900 1000 50  0001 C CNN "Mouser_Link"
+F 5 "810-C1608X7R1E104K" H 4900 1000 50  0001 C CNN "Mouser_PN"
+	1    4900 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C9
+U 1 1 61E72A2F
+P 5350 1000
+F 0 "C9" H 5442 1046 50  0000 L CNN
+F 1 "100nF" H 5442 955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 5350 1000 50  0001 C CNN
+F 3 "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_general_en.pdf" H 5350 1000 50  0001 C CNN
+F 4 "https://www.mouser.com/ProductDetail/810-C1608X7R1E104K" H 5350 1000 50  0001 C CNN "Mouser_Link"
+F 5 "810-C1608X7R1E104K" H 5350 1000 50  0001 C CNN "Mouser_PN"
+	1    5350 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C10
+U 1 1 61E72A35
+P 5800 1000
+F 0 "C10" H 5892 1046 50  0000 L CNN
+F 1 "100nF" H 5892 955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 5800 1000 50  0001 C CNN
+F 3 "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_general_en.pdf" H 5800 1000 50  0001 C CNN
+F 4 "https://www.mouser.com/ProductDetail/810-C1608X7R1E104K" H 5800 1000 50  0001 C CNN "Mouser_Link"
+F 5 "810-C1608X7R1E104K" H 5800 1000 50  0001 C CNN "Mouser_PN"
+	1    5800 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C11
+U 1 1 61E72A3B
+P 6250 1000
+F 0 "C11" H 6342 1046 50  0000 L CNN
+F 1 "100nF" H 6342 955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 6250 1000 50  0001 C CNN
+F 3 "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_general_en.pdf" H 6250 1000 50  0001 C CNN
+F 4 "https://www.mouser.com/ProductDetail/810-C1608X7R1E104K" H 6250 1000 50  0001 C CNN "Mouser_Link"
+F 5 "810-C1608X7R1E104K" H 6250 1000 50  0001 C CNN "Mouser_PN"
+	1    6250 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74ALVC164245:74ALVC164245-logic U4
+U 1 1 612C26EB
+P 11650 2350
+F 0 "U4" H 11700 2400 50  0000 C CNN
+F 1 "74ALVC164245" H 12800 2400 50  0000 C CNN
+F 2 "Package_SO:TSSOP-48_6.1x12.5mm_P0.5mm" H 11800 2350 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/916/74ALVC164245-1318594.pdf" H 11800 2350 50  0001 C CNN
+F 4 "https://www.mouser.com/ProductDetail/771-74ALVC164245" H 11650 2350 50  0001 C CNN "Mouser_Link"
+F 5 "771-74ALVC164245" H 11650 2350 50  0001 C CNN "Mouser_PN"
+	1    11650 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x09_Odd_Even J1
+U 1 1 61DB68AB
+P 9350 3150
+F 0 "J1" H 9400 3767 50  0000 C CNN
+F 1 "Data" H 9400 3676 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_2x09_P2.00mm_Vertical" H 9350 3150 50  0001 C CNN
+F 3 "~" H 9350 3150 50  0001 C CNN
+	1    9350 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x09_Odd_Even J2
+U 1 1 61F95DC2
+P 14700 3100
+F 0 "J2" H 14750 3717 50  0000 C CNN
+F 1 "Bus Signals" H 14750 3626 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_2x09_P2.00mm_Vertical" H 14700 3100 50  0001 C CNN
+F 3 "~" H 14700 3100 50  0001 C CNN
+	1    14700 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x09_Odd_Even J3
+U 1 1 61FCAE14
+P 9350 6100
+F 0 "J3" H 9400 6717 50  0000 C CNN
+F 1 "Address" H 9400 6626 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_2x09_P2.00mm_Vertical" H 9350 6100 50  0001 C CNN
+F 3 "~" H 9350 6100 50  0001 C CNN
+	1    9350 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x09_Odd_Even J4
+U 1 1 62881B60
+P 14600 6150
+F 0 "J4" H 14650 6767 50  0000 C CNN
+F 1 "Function Code and Lower Address" H 14650 6676 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_2x09_P2.00mm_Vertical" H 14600 6150 50  0001 C CNN
+F 3 "~" H 14600 6150 50  0001 C CNN
+	1    14600 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R3
+U 1 1 61A1CBC4
+P 1200 4300
+F 0 "R3" H 1250 4350 50  0000 L CNN
+F 1 "2.2K" H 1250 4250 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 1200 4300 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/crxxxxx-1858361.pdf" H 1200 4300 50  0001 C CNN
+F 4 "https://www.mouser.com/ProductDetail/Bourns/CR0603-FX-2201ELF?qs=%2Fha2pyFadugdzJ7nlgcs%252B6DvFNtaxPtnyayvdi7zvXZhRYLSKKpmrgZDV990M6J3" H 1200 4300 50  0001 C CNN "Mouser_Link"
+F 5 "652-CR0603FX-2201ELF" H 1200 4300 50  0001 C CNN "Mouser_PN"
+	1    1200 4300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
